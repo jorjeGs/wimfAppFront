@@ -40,7 +40,7 @@ export default class search extends Component {
                 loadingBack: false
             })
         } catch (e) {
-            console.log('Ocurrio un error obteniendo los, si no se puede esto ps ni modo')
+            console.log('Ocurrio un error obteniendo informacion de la BD')
             this.setState({
                 service: false,
                 loadingBack: false

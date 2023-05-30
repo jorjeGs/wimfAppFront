@@ -57,7 +57,7 @@ export default class Createuser extends Component {
   deleteUser = async (id) => {
     try {
       this.setState({ loadingBack: true })
-      await axios.delete('https://wimfapp-api.onrender.com/api/users' + id)
+      await axios.delete('https://wimfapp-api.onrender.com/api/users/' + id)
       this.setState({ loadingBack: false })
       this.getUsers();
 
